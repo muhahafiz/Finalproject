@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  border-bottom: 1px solid white;
+  padding: 8px 0;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+.navLinkActive {
+    text-decoration: none;
+    color: orange;
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+    .container {
+        display: flex;
+    }
+}

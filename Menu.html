@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu</title>
+    <script src="Navigation.js"></script>
+    <script src="Menu.js"></script>
+    <link rel="stylesheet" href="Menu.css" />
+    <link rel="stylesheet" href="Nav.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <nav></nav>
+        <h1>Our Menu</h1>
+      </section>
+    </header>
+    <section class="Reservationform">
+      <h1>Make a Reservation</h1>
+      <form>
+        <div id="reservationForm">
+          <div>
+            <label>Full Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div>
+            <label>Date</label>
+            <input type="date" id="date" required />
+          </div>
+          <div>
+            <label>Time</label>
+            <input type="time" id="time" required />
+          </div>
+          <div>
+            <label>Number of Guests</label>
+            <input type="number" id="guests" min="1" required />
+          </div>
+        </div>
+        <button type="submit">Reserve Now</button>
+      </form>
+
+      <p id="message"></p>
+      <script src="Home.js"></script>
+    </section>
+    <section class="Menu">
+      <p id="songa">
+        🥘 Explore our selection of delicious dishes, made fresh and served with
+        care. We invite you to discover your new favorite meal 🥘
+      </p>
+      <div>
+        <h1>🫕Appetizers🫕</h1>
+        <div class="section" id="appetizers"></div>
+      </div>
+      <div>
+        <h1>🍛 Main Courses 🍛</h1>
+        <div class="section" id="mains"></div>
+      </div>
+      <div>
+        <h1>🍰 Desserts 🍰</h1>
+        <div class="section" id="desserts"></div>
+      </div>
+    </section>
+  </body>
+</html>
