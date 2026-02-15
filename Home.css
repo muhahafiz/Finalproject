@@ -58,5 +58,11 @@ section.ad {
 #paragraph {
 font-size: 22px;
 }
-
-
+@media screen and (min-width: 600px) {
+    body {
+        background-color: black;
+    }
+    .container {
+        display: flex;
+    }
+}
