@@ -20,7 +20,7 @@ Nav.prototype.addNavItem = function (navItem) {
   this.navItems.push(navItem);
 };
 
-const homeLink = new NavItem("Home", "Home.html");
+const homeLink = new NavItem("Home", "index.html");
 const aboutLink = new NavItem("About", "Aboutandreservations.html");
 const menuLink = new NavItem("Menu", "Menu.html");
 
