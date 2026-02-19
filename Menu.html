@@ -17,35 +17,37 @@
       </section>
     </header>
     <section class="Reservationform">
-      <h1>Make a Reservation</h1>
-      <form>
-        <div id="reservationForm">
-          <div>
-            <label>Full Name</label>
-            <input type="text" id="name" required />
-          </div>
-          <div>
-            <label>Email</label>
-            <input type="email" id="email" required />
-          </div>
-          <div>
-            <label>Date</label>
-            <input type="date" id="date" required />
-          </div>
-          <div>
-            <label>Time</label>
-            <input type="time" id="time" required />
-          </div>
-          <div>
-            <label>Number of Guests</label>
-            <input type="number" id="guests" min="1" required />
-          </div>
-        </div>
-        <button type="submit">Reserve Now</button>
-      </form>
+  <h1>Make a Reservation</h1>
+<form id="reservationForm">
+  <div>
+    <label>Full Name</label>
+    <input type="text" id="name" required />
+  </div>
+  <div>
+    <label>Email</label>
+    <input type="email" id="email" required />
+  </div>
+  <div>
+    <label>Date</label>
+    <input type="date" id="date" required />
+  </div>
+  <div>
+    <label>Time</label>
+    <input type="time" id="time" required />
+  </div>
+  <div>
+    <label>Number of Guests</label>
+    <input type="number" id="guests" min="1" required />
+  </div>
+
+  <button type="submit">Reserve Now</button>
+</form>
+
+<p id="reservationConfirmation"></p>
+
 
       <p id="message"></p>
-      <script src="Home.js"></script>
+      <script src="reservatin.js"></script>
     </section>
     <section class="Menu">
       <p id="songa">

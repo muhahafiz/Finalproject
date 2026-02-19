@@ -30,35 +30,7 @@ window.addEventListener("DOMContentLoaded", function show() {
 });
 
 
-//js for about pg 
-function Reservation(name, email, date, time, guests) {
-  this.name = name;
-  this.email = email;
-  this.date = date;
-  this.time = time;
-  this.guests = guests;
-}
-Reservation.prototype.confirm = function() {
-  return `Thank you ${this.name}! Your table for ${this.guests} guest(s) on ${this.date} at ${this.time} has been reserved. A confirmation will be sent to ${this.email}.`;
-};
-document.getElementById("reservationForm").addEventListener("submit", function(event) {
-  event.preventDefault();
 
- const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const date = document.getElementById("date").value;
-  const time = document.getElementById("time").value;
-  const guests = document.getElementById("guests").value;
-
-  const reservation = new Reservation(name, email, date, time, guests);
-  const confirmationElement = document.getElementById('reservationConfirmation');
-  if (confirmationElement) {
-    confirmationElement.textContent = reservation.confirm();
-  } else {
-    alert(reservation.confirm());
-  }
-  event.target.reset();
-});
 
 
 
